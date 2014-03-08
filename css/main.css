@@ -1,0 +1,19 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+	padding: 0;
+
+	background: #FFF url(../img/satinweave.png);
+}
+
+img {
+	border: 1px solid #ccc;
+	box-shadow: 4px 5px 5px #ccc;
+}
+
+h1, h2 {
+	font-family: 'Domine', serif;
+}

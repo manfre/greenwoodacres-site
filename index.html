@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Greenwood Acres - Cary, NC</title>
+        <meta name="description" content="Neighborhood webside for the Greenwood Acres community located in Cary, NC.">
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Greenwood Acres <small>Neighbors Helping Neighbors</small></h1>
+        </div>
+
+        <!-- Main hero unit for a primary marketing message or call to action -->
+        <div class="row">
+            <span class="span5">
+                <img src="img/greenwoodacres-map.gif" class="" />
+            </span>
+            <span class="span7">
+                <p>
+                    We're an awesome little neighborbood in Cary, NC that believe it's important to interact 
+                    with the people that live around us and to be <em>neighborly</em>.
+                </p>
+                <p>
+                    From time to time we have social events in the neighborhood. Join the mailing list to
+                    find out about these activities.
+                </p>
+                <div class="alert alert-info">We are not an HOA. There are no dues or fees.</div>
+            </span>
+        </div>
+
+        <hr>
+
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="span5">
+                <h2>Mailing List</h2>
+                <p>We've created a mailing list for Greenwood Acres residents. Access to the list is restricted to
+                    community residents.</p>
+                <p>To request access to the list, send an email to <span id="join" data-domain="greenwoodacres.us" data-alias="join">Join the mailing list</span> 
+                    and include your name, address, and phone number.</p>
+            </div>
+            <div class="offset2 span5">
+                <h2>Job Mob</h2>
+                <p>
+                    Have a task that would be easier with another pair of eyes or a few more hands?
+                    Your neighbors are here to help. Some of the tasks completed by the Job Mob:
+
+                    <ul>
+                        <li>Checked a crawlspace for a leak</li>
+                        <li>Patched a screen door</li>
+                        <li>Helped build a chicken coop</li>
+                    </ul>
+                </p>
+           </div>
+        </div>
+
+
+    </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+         <!-- <script src="js/vendor/bootstrap.min.js"></script>-->
+
+        <script type="text/javascript">
+        ;(function($, window, document){
+            $(function() {
+                var join = $('#join'),
+                    domain = join.data('domain'),
+                    alias = join.data('alias'),
+                    subject = join.text(),
+                    addr = alias + '@' + domain,
+                    a = $('<a></a>', {'href': 'mailto:' + addr + '?subject=' + encodeURI(subject)}).text(addr);
+                join.replaceWith(a);
+            });
+        })(jQuery, window, document);
+        </script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-38626491-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
